@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Install libclang-7-dev on APT
-      run: sudo apt install libclang-7-dev
+      run: sudo apt-get install clang-3.8
 
     - name: Install Clang
       # You may pin to the exact commit or the version.
