@@ -22,6 +22,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Install libclang-7-dev on APT
+      run: sudo apt install libclang-7-dev
+
     - name: Install Clang
       # You may pin to the exact commit or the version.
       # uses: egor-tensin/setup-clang@ef434b41eb33a70396fb336b1bae39c76d740c3d
